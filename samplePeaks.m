@@ -1,5 +1,6 @@
 %% サンプルデータの取得
 function samplePeaks(savedir,fs,segmentDuration,MinPeakHeight)
+warning off
 
 samplesPerFrame = ceil(fs*segmentDuration);
 audioIn = audioDeviceReader(fs, samplesPerFrame);
@@ -26,10 +27,10 @@ while ishandle(h)
    title('Live Data','FontSize',18);
    
    % ピークの検出
-   warning off
+
    [pks,locs] = findpeaks(x,fs,'MinPeakDistance',0.2,'MinPeakHeight',MinPeakHeight);
    text(double(locs),double(pks+0.1),'Peak detection!!','FontSize',12,'Color','red')
-   warning on 
+
    
    %size(locs)
    
@@ -51,6 +52,7 @@ while ishandle(h)
    drawnow 
     
 end
+warning on
 release(audioIn)
 
 end

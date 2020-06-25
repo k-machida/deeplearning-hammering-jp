@@ -1,8 +1,7 @@
-# deeplearning-hammering-jp
-Deep learning for Hammering Test
-%%　ディープラーニングによる打音検査　%%
+# ディープラーニングによる打音検査
+MATLABによるディープラーニングを使った打音検査のデモです。
 
-![HammeringTest](https://user-images.githubusercontent.com/17340750/85642730-43c8b780-b6cd-11ea-9722-3eccb8293ca6.gif)
+![HammeringTest_s](https://user-images.githubusercontent.com/17340750/85642916-b2a61080-b6cd-11ea-8146-d4c851ca85ec.gif)
 
 # 内容物
 * demo_live.m : デモスクリプト本体
